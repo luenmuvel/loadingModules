@@ -2,7 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-person',
-  templateUrl: './person.component.html'
+  template: `
+		<h2>Welcome to Person Home</h2>
+		<a [routerLink]="['person-list']" routerLinkActive="active">View Person List</a>
+	        <router-outlet></router-outlet>
+  `
 })
 export class PersonComponent {
 

@@ -1,7 +1,10 @@
-<ul>
-  <li><a routerLink="country">Country</a></li>
-  <li><a routerLink="person">Person</a></li>
-  <li><a routerLink="address">Address</a></li>
-</ul>
-
-<router-outlet></router-outlet>
+<nav [ngClass]="'parent-menu'">
+  <ul>
+    <li><a routerLink="country" routerLinkActive="active">Country</a></li>
+    <li><a routerLink="person" routerLinkActive="active">Person</a></li>
+    <li><a routerLink="address" routerLinkActive="active">Address</a></li>
+  </ul>
+</nav>
+<div [ngClass]="'parent-container'">
+  <router-outlet></router-outlet>
+</div>

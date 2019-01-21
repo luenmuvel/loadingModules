@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 import { AddressComponent } from './address.component';
 import { PageNotFoundComponent } from './page-not-found.component';
 
@@ -18,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/country',
+    redirectTo: '',
     pathMatch: 'full'
   },
   {
@@ -29,7 +29,9 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {
+      preloadingStrategy: PreloadAllModules,
+    })
   ],
   exports: [
     RouterModule

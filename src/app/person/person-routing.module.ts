@@ -14,6 +14,16 @@ const personRoutes: Routes = [
         component: PersonListComponent
       }
     ]
+  },
+  {
+    path: '**',
+    component: PersonComponent,
+    children: [
+      {
+        path: 'person-list',
+        component: PersonListComponent
+      }
+    ]
   }
 ];
 
