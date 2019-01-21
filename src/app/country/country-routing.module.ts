@@ -17,6 +17,16 @@ const countryRoutes: Routes = [
         component: CountryListComponent
       }
     ]
+  },
+  {
+    path: '**',
+    component: CountryComponent,
+    children: [
+      {
+        path: 'country-list',
+        component: CountryListComponent
+      }
+    ]
   }
 ];
 
