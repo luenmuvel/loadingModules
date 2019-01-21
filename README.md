@@ -7,3 +7,10 @@ Este proyecto de prueba lo hice para probar los tres tipos de carga de módulos 
 En cada commit está la descripción de lo que diferencia a uno de otro.
 
 
+### Nota:
+No olvides lanzar tu respectivo
+
+```
+npm install
+```
+Esto creará el directorio node_modules con sus respectivas dependencias.
