@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PersonRoutingModule } from './person-routing.module';
 
 import { PersonComponent } from './person.component';
 import { PersonListComponent } from './person-list/person-list.component';
@@ -11,6 +12,7 @@ import { PersonService } from './services/person.service';
   imports: [
     CommonModule,
     ReactiveFormsModule,
+    PersonRoutingModule,
   ],
   declarations: [
     PersonComponent,

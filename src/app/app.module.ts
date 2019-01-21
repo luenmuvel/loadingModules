@@ -1,7 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CountryModule } from './country/country.module';
-import { PersonModule } from './person/person.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './routing';
 
 import { AppComponent } from './app.component';
@@ -16,10 +14,7 @@ import { PageNotFoundComponent } from './page-not-found.component';
   ],
   imports: [
     BrowserModule,
-    CountryModule,
-    PersonModule,
-    BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,6 +5,14 @@ import { PageNotFoundComponent } from './page-not-found.component';
 
 const routes: Routes = [
   {
+    path: 'country',
+    loadChildren: 'src/app/country/country.module#CountryModule'
+  },
+  {
+    path: 'person',
+    loadChildren: 'src/app/person/person.module#PersonModule'
+  },
+  {
     path: 'address',
     component: AddressComponent
   },
